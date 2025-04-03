@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículo</title>
+  <link rel="shortcut icon" href="https://images.icon-icons.com/3790/PNG/512/curriculum_profile_biodata_resume_portofolio_cv_vitae_icon_232635.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #ffffff;
+      /* Azul claro */
+      color: #333;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .profile-section img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+      /* Azul */
+    }
+
+    .profile-section img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    
+    }
+
+    h1,
+    h2 {
+      color: #007bff;
+      /* Azul */
+      margin-bottom: 15px;
+    }
+
+    .card {
+      border: 1px solid #007bff;
+    }
+
+    .list-group-item {
+      background-color: #e6f2ff;
+      /* Azul claro */
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #00c6ff;
+    }
+
+    /* Estilo para os cards */
+    .card {
+      border: 1px solid #007bff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden; /* Garante que o conteúdo extra fique oculto */
+    }
+
+    .card:hover {
+      transform: scale(1.05); /* Aumenta o tamanho */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    }
+
+    .card-body .extra-content {
+      max-height: 0; /* Oculta o conteúdo extra inicialmente */
+      overflow: hidden;
+      transition: max-height 0.3s ease; /* Animação suave */
+    }
+
+    .card:hover .extra-content {
+      max-height: 200px; /* Expande o conteúdo extra ao passar o mouse */
+    }
+   
+      h1, h2 {
+        background: linear-gradient(90deg, #00c6ff, #007bff, #055dbb); /* Degradê azul */
+        -webkit-background-clip: text; /* Aplica o degradê ao texto */
+        -webkit-text-fill-color: transparent; /* Torna o fundo do texto transparente */
+        font-weight: bold; /* Deixa o texto mais destacado */
+      }
+ 
+  </style>
+
+</head>
+
+<body>
+  <div class="container mt-5">
+    <!-- Seção de Introdução -->
+    <div class="text-center mb-4">
+      <div class="profile-section">
+        <img src="perfil2.png" alt="Foto de Perfil">
+        <div>
+          <h1>Alice Pinheiro da Silva</h1>
+          <p class="lead">Desenvolvedor Web | Especialista em Front-End</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Experiência -->
+    <div class="mb-4">
+      <h2>Experiência Profissional</h2>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Desenvolvedor Web</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Empresa XYZ - Janeiro 2020 a Março 2025</h6>
+          <p class="card-text">
+            Responsável pelo desenvolvimento de aplicações web responsivas utilizando HTML, CSS, JavaScript e frameworks
+            como Bootstrap e React.
+          </p>
+          <div class="extra-content">
+            <p>
+              Trabalhou em projetos de alta complexidade, colaborando com equipes multidisciplinares para entregar
+              soluções inovadoras. Implementou práticas de desenvolvimento ágil e garantiu a qualidade do código por
+              meio de revisões e testes automatizados.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Estagiário em TI</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Empresa ABC - Junho 2018 a Dezembro 2019</h6>
+          <p class="card-text">
+            Auxiliou na manutenção de sistemas internos e no suporte técnico aos usuários.
+          </p>
+          <div class="extra-content">
+            <p>
+              Participou de projetos de automação de processos e implementou melhorias em sistemas legados, contribuindo
+              para a eficiência operacional. Desenvolveu scripts para otimizar tarefas repetitivas e reduziu o tempo de
+              execução de processos internos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Habilidades -->
+    <div class="mb-4">
+      <h2>Habilidades</h2>
+      <ul class="list-group">
+        <li class="list-group-item">HTML5, CSS3, JavaScript</li>
+        <li class="list-group-item">Bootstrap, React, Angular</li>
+        <li class="list-group-item">Versionamento com Git e GitHub</li>
+        <li class="list-group-item">Android, Flutter</li>
+      </ul>
+    </div>
+
+<!-- Seção de Projetos -->
+        <div class="mb-4">
+          <h2 class="mb-4">Projetos</h2>
+          <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 1: A&A Make</h5>
+                  <p class="card-text">
+                    Uma loja inicialmente desenvolvida em Java e posteriormente migrada para HTML, CSS e JavaScript. O projeto apresenta um design confortavel e funcionalidades interativas para oferecer uma experiência de compra online eficiente e moderna.
+                  </p>
+                  <a href="https://github.com/AliceSilva56/A-A-Make" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Projeto 2 -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 2: ChatBox Aly</h5>
+                  <p class="card-text">
+                    Um aplicativo desenvolvido em Flutter que permite explorar histórias interativas. Na tela inicial, a Aly te guia em uma experiência única. O chat oferece uma interface intuitiva para iniciar diálogos e se conectar com a personagem, proporcionando uma interação envolvente.
+                  </p>
+                  <a href="https://github.com/AliceSilva56/Chat-Aly" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Projeto 3 -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 3: Tríade Digital</h5>
+                  <p class="card-text">
+                    Um aplicativo móvel com três telas distintas, cada uma projetada para atender a funções específicas. O Tríade Digital oferece uma experiência completa e versátil, combinando design intuitivo e funcionalidades práticas para atender às necessidades do usuário.
+                  </p>
+                  <a href="https://github.com/AliceSilva56/Triade_digital" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Projeto 4 -->
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 4: Miauh Timer</h5>
+                  <p class="card-text">
+                    Um aplicativo Android com tema de gatinho, projetado para calcular intervalos de tempo. O Miauh Timer combina uma interface amigável com um design divertido, tornando a gestão de tempo mais agradável e eficiente.
+                  </p>
+                  <a href="https://github.com/AliceSilva56/Miauh_timer" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Seção de Contato -->
+    <div class="mb-4">
+      <h2>Contato</h2>
+      <p>Email: alicepinheiro016@gmail.com</p>
+      <p>Telefone: (75) 9 8325-5486</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/alice-pinheiro-da-silva-a966b6319/" target="_blank">linkedin.com/in/Alice Pinheiro da Silva</a></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+AMvuF0s3b1zY+kv3Wsc72Pp4aVOQ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
